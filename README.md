@@ -17,6 +17,7 @@
 - Para instalarmos uma dependência podemos buscar por ela em sites como packagist.org e instalar de duas formas diferentes:
   
     1 - Podemos utilizar o comando "composer require <nome do pacote>" pelo terminal.
+  
     2 - Podemos adicionar a dependência no campo require do arquivo json e utilizar os comandos "composer install" e "composer update" no terminal.
 
 - Caso precisemos instalar algo que fique apenas no ambiente de desenvolvimento podemos utilizar o "composer require --dev", isso permite que quando formos rodar a aplicação em ambiente de produção utilizemos o comando "composer install --no-dev" para eliminarmos as instalações usadas apenas no desenvolvimento evitando coisas desnecessárias no ambiente de produção.
