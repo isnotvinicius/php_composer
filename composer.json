@@ -1,0 +1,30 @@
+{
+    "name": "vinixas/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "vinixas",
+            "email": "vinicius.oliveira3301@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "symfony/dom-crawler": "^5.1",
+        "symfony/css-selector": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alura\\BuscadorCursos\\" : "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2",
+        "squizlabs/php_codesniffer": "^3.5",
+        "phan/phan": "^3.0"
+    },
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser"
+    }
+}
